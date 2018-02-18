@@ -12,8 +12,6 @@
         android:id="@+id/imageView"
         android:contentDescription="@string/image_content_description"
         app:srcCompat="@android:color/background_light"
-        app:layout_column="0"
-        app:layout_row="0"
         app:layout_columnWeight="1"
         app:layout_rowWeight="1"/>
 
@@ -21,8 +19,6 @@
         android:id="@+id/imageView2"
         android:contentDescription="@string/image_content_description"
         app:srcCompat="@android:color/background_light"
-        app:layout_column="1"
-        app:layout_row="0"
         app:layout_columnWeight="1"
         app:layout_rowWeight="1"/>
 
@@ -30,8 +26,6 @@
         android:id="@+id/imageView3"
         android:contentDescription="@string/image_content_description"
         app:srcCompat="@android:color/background_light"
-        app:layout_column="0"
-        app:layout_row="1"
         app:layout_columnWeight="1"
         app:layout_rowWeight="1"/>
 
@@ -39,8 +33,6 @@
         android:id="@+id/imageView4"
         android:contentDescription="@string/image_content_description"
         app:srcCompat="@android:color/background_light"
-        app:layout_column="1"
-        app:layout_row="1"
         app:layout_columnWeight="1"
-        app:layout_rowWeight="1"/>
+        app:layout_rowWeight="1" />
 </android.support.v7.widget.GridLayout>

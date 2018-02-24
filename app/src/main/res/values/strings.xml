@@ -15,4 +15,6 @@
     <string name="pref_sort_mostpopular_value">mostPopular</string>
     <string name="pref_sort_highestrated_value">highestRated</string>
 
+    <string name="movie_name">Movie Name</string>
+
 </resources>

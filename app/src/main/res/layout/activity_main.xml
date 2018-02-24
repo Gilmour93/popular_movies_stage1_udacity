@@ -1,38 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.android.popularmovies.MainActivity"
-    app:columnCount="2"
-    app:rowCount="2">
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:contentDescription="@string/image_content_description"
-        app:srcCompat="@android:color/background_light"
-        app:layout_columnWeight="1"
-        app:layout_rowWeight="1"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_films">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:contentDescription="@string/image_content_description"
-        app:srcCompat="@android:color/background_light"
-        app:layout_columnWeight="1"
-        app:layout_rowWeight="1"/>
+    </android.support.v7.widget.RecyclerView>
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:contentDescription="@string/image_content_description"
-        app:srcCompat="@android:color/background_light"
-        app:layout_columnWeight="1"
-        app:layout_rowWeight="1"/>
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:contentDescription="@string/image_content_description"
-        app:srcCompat="@android:color/background_light"
-        app:layout_columnWeight="1"
-        app:layout_rowWeight="1" />
-</android.support.v7.widget.GridLayout>
+</FrameLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="film"
+            type="com.example.android.popularmovies.models.Film">
+        </variable>
+    </data>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.android.popularmovies.DetailActivity">
+
+        <TextView
+            android:id="@+id/movieName_tv"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@color/colorPrimaryLight"
+            android:elevation="@dimen/default_gap"
+            android:gravity="center|start"
+            android:padding="30dp"
+            android:text="@{film.title}"
+            android:textSize="32sp" />
+
+        <ImageView
+            android:id="@+id/movie_iv"
+            android:layout_width="120dp"
+            android:layout_height="185dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/image_content_description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/movieName_tv"
+            app:srcCompat="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/releaseDate_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="24dp"
+            android:text="@{film.releaseDate"
+            app:layout_constraintStart_toEndOf="@+id/movie_iv"
+            app:layout_constraintTop_toBottomOf="@+id/movieName_tv" />
+
+        <TextView
+            android:id="@+id/duration_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@{film.duration}"
+            app:layout_constraintStart_toStartOf="@+id/releaseDate_tv"
+            app:layout_constraintTop_toBottomOf="@+id/releaseDate_tv" />
+
+        <TextView
+            android:id="@+id/rating_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@{film.voteAverage}"
+            app:layout_constraintStart_toStartOf="@+id/duration_tv"
+            app:layout_constraintTop_toBottomOf="@+id/duration_tv" />
+
+        <TextView
+            android:id="@+id/divider_tv"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="@dimen/default_gap"
+            android:layout_marginRight="@dimen/default_gap"
+            android:background="@color/colorPrimaryLight"
+            app:layout_constraintTop_toBottomOf="@+id/movie_iv" />
+
+        <TextView
+            android:id="@+id/overview_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@{film.overview}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_tv" />
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
+
+</layout>
